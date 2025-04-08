@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>IQ Tình Yêu của em Pan 🐼</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #ff3399;
+    }
+    .question {
+      margin: 20px 0;
+    }
+    button {
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .result {
+      font-size: 24px;
+      color: #cc0066;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Trắc nghiệm IQ Tình Yêu của em Pan 🐼</h1>
+  <p>Thiết kế bởi chú Trường – Người yêu quốc dân của gấu trúc 🐼</p>
+
+  <div class="question">
+    <p>1. Khi chú Trường nhắn "Nhớ em Pan quá" thì em sẽ:</p>
+    <input type="radio" name="q1"> "Em cũng nhớ chú Trường 🥺"<br>
+    <input type="radio" name="q1"> Seen 1 tiếng sau mới rep 👻<br>
+    <input type="radio" name="q1"> Gửi sticker gấu trúc đang ngủ 🐼💤<br>
+  </div>
+
+  <div class="question">
+    <p>2. Em Pan thích nhất ở chú Trường điều gì?</p>
+    <input type="radio" name="q2"> Mặt đẹp – tâm hồn xàm 😂<br>
+    <input type="radio" name="q2"> Tính tình như gió mùa đông bắc<br>
+    <input type="radio" name="q2"> Có tâm và có tật 😅<br>
+  </div>
+
+  <div class="question">
+    <p>3. Nếu chú Trường hóa thành gấu trúc thật thì em Pan sẽ:</p>
+    <input type="radio" name="q3"> Mang về nuôi luôn<br>
+    <input type="radio" name="q3"> Cho đi sở thú chơi cho vui 🐼<br>
+    <input type="radio" name="q3"> Ngồi ăn mía chung<br>
+  </div>
+
+  <div class="question">
+    <p>4. Khi chú Trường đăng story thả thính, em Pan sẽ:</p>
+    <input type="radio" name="q4"> Trả lời ngay: "Ai cho thả?" 😤<br>
+    <input type="radio" name="q4"> Không rep nhưng âm thầm ghen<br>
+    <input type="radio" name="q4"> Gửi sticker gấu trúc ghen 🐼🔥<br>
+  </div>
+
+  <div class="question">
+    <p>5. Em Pan ghen theo kiểu nào?</p>
+    <input type="radio" name="q5"> Ghen ngầm – không nói, chỉ lườm 👁️<br>
+    <input type="radio" name="q5"> Ghen toáng lên rồi lại thấy dễ thương<br>
+    <input type="radio" name="q5"> Ghen gì đâu, miễn chú Trường không quên em là được 🥺<br>
+  </div>
+
+  <div class="question">
+    <p>6. Em Pan có hay nhớ chú Trường không?</p>
+    <input type="radio" name="q6"> Có, mỗi khi đói bụng là nhớ 😅<br>
+    <input type="radio" name="q6"> Nhớ mỗi lần bị troll 😤<br>
+    <input type="radio" name="q6"> Nhớ 24/7 như đồng hồ báo thức 💓<br>
+  </div>
+
+  <div class="question">
+    <p>7. Nếu chú Trường tặng hoa cho em Pan, em sẽ:</p>
+    <input type="radio" name="q7"> Cất đi ép khô giữ làm kỷ niệm 🌸<br>
+    <input type="radio" name="q7"> Trả lại bảo: "Anh tặng nhầm người à?" 😏<br>
+    <input type="radio" name="q7"> Thay avatar thành hoa luôn cho ngầu 🌼<br>
+  </div>
+
+  <button onclick="showResult()">Xem điểm IQ tình yêu nè 😝</button>
+
+  <div class="result" id="result" style="display: none;"></div>
+
+  <script>
+    function showResult() {
+      const results = [
+        "IQ tình yêu của em Pan là... 999 – Tình yêu đỉnh cao, chú Trường không thoát được đâu 💘",
+        "IQ tình yêu của em Pan là... 0 – Vì toàn bộ IQ dồn hết cho chú Trường rồi 🥹",
+        "IQ tình yêu của em Pan là... 69 – Nhỏ nhưng chất lượng lắm 😎",
+        "IQ tình yêu của em Pan là... 404 – Không tìm thấy lý do để không yêu chú Trường 🐼💕"
+      ];
+      const result = results[Math.floor(Math.random() * results.length)];
+      document.getElementById("result").style.display = "block";
+      document.getElementById("result").innerText = result;
+    }
+  </script>
+</body>
+</html>
